@@ -1,7 +1,13 @@
 {
   "dependencies": {
-    "mssql1": {
+    "secrets1": {
       "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/krishnaakv",
+      "type": "secrets.keyVault",
+      "connectionId": "keyVaultUri"
+    },
+    "mssql1": {
+      "secretStore": "AzureKeyVault",
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/serversqldbdemo/databases/sqldbsample",
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:MyDbConnection",

@@ -3,11 +3,6 @@
     "secrets1": {
       "type": "secrets",
       "connectionId": "keyVaultUri"
-    },
-    "mssql1": {
-      "type": "mssql",
-      "connectionId": "ConnectionStrings:MyDbConnection",
-      "dynamicId": null
     }
   }
 }

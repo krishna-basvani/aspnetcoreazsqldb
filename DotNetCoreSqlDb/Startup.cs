@@ -29,7 +29,7 @@ namespace DotNetCoreSqlDb
         {
             services.AddControllersWithViews();
             services.AddDbContext<MyDatabaseContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+                    options.UseSqlServer(Configuration.GetConnectionString("TestDBConn")));
             services.AddApplicationInsightsTelemetry(Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
            
         }
